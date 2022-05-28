@@ -1,0 +1,8 @@
+.bg {
+  background-color: #888888;
+  background-image: url("src/assets/images/bgimage.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  height: 100vh;
+}
