@@ -1,7 +1,3 @@
-* {
-  font-family: "Quicksand";
-  font-size: 50px;
-}
 .bg {
   background-color: #888888;
   background-image: url("src/assets/images/bgimage.jpg");
@@ -9,14 +5,6 @@
   background-position: 50%;
   background-size: contain;
   height: 100vh;
-}
-* {
-  font-family: "Quicksand";
-  font-size: 50px;
-}
-
-.brand-logo {
-  margin-left: 20px;
 }
 
 #nav-mobile li {
@@ -26,7 +14,7 @@
 
 li a {
   text-align: center;
-  padding-right: 50px;
+  padding-right: 60px;
   margin: 0;
   height: 100%;
   font-size: x-large;
@@ -35,14 +23,15 @@ li a {
 }
 
 .brand-logo {
-  font-size: larger;
+  font-size: 50px;
   font-weight: bold;
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 img {
   margin-top: 15px;
-  margin-left: 15px;
+  padding-left: 40px;
 }
 
 p {
