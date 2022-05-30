@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-show-password',
@@ -9,8 +9,4 @@ export class ShowPasswordComponent {
   showPassword: boolean = false;
 
   constructor() {}
-  /* toggleShow() {
-    this.showPassword = !this.showPassword;
-    this.input.type = this.showPassword ? 'text' : 'password';
-  }*/
 }
