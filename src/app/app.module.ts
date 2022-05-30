@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ShowPasswordComponent } from './show-password/show-password.component';
 import { LogoComponent } from './logo/logo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LogoComponent } from './logo/logo.component';
     AboutUsComponent,
     ShowPasswordComponent,
     LogoComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

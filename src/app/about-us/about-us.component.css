@@ -1,10 +1,16 @@
 .bg {
-  background-image: url("src/assets/images/blob-haikei.svg");
+  background-image: url("src/assets/images/aboutus.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100vh;
+  background-position: right;
+  height: 80vh;
 }
 
-img {
-  float: right;
+.container {
+  margin-top: 70px;
+  font-size: large;
+}
+
+.title {
+  font-size: 1cm;
 }
