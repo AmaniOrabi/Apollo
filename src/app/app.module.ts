@@ -10,6 +10,9 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ShowPasswordComponent } from './show-password/show-password.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    provideAuth(() => getAuth()),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireDatabaseModule,
   ],
   providers: [],
