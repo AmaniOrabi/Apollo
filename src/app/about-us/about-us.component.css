@@ -1,0 +1,10 @@
+.bg {
+  background-image: url("src/assets/images/blob-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+
+img {
+  float: right;
+}
