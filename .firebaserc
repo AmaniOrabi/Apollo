@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "apollo-4d7c6": {
+      "hosting": {
+        "Apollo": [
+          "apollo-4d7c6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "apollo-4d7c6"
+  }
+}
