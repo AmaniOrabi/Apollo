@@ -12,6 +12,8 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
     this.service
       .login('alaac617@gmail.com', 'doudoud2D')
-      .subscribe((payload) => console.log(payload));
+      .subscribe((payload) => {
+        console.log(payload);
+      });
   }
 }

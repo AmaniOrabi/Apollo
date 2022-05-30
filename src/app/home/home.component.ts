@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from './../services/authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private service: AuthenticationService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(
+      this.service.getCurrent().subscribe((payload) => console.log(payload))
+    );
+  }
 }
