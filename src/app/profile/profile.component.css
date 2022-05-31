@@ -11,9 +11,10 @@ img {
   padding-left: 40px;
 }
 .half {
-  width: 50%;
+  width: 44%;
   height: 150px;
   background-color: white;
+  margin-right: 5%;
 }
 .secondHalf {
   width: 50%;
