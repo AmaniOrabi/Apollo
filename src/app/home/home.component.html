@@ -7,11 +7,34 @@
         <a routerLink="/" class="brand-logo">Apollo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
+            <a>Logged in as {{ email }}</a>
+          </li>
+          <li>
             <a class="waves-effect" routerLink="/aboutus">About us</a>
           </li>
-          <li><a class="waves-effect" routerLink="/login">Log in</a></li>
-          <li>
+          <ng-container
+            *ngIf="service.currentUser$ | async as user; else showThis"
+          >
+            <li>
+              <a class="waves-effect" routerLink="/profile">Profile</a>
+            </li>
+          </ng-container>
+          <ng-template #showThis>
+            <li>
+              <a class="waves-effect" routerLink="/login">Log in</a>
+            </li>
+            <li>
+              <a class="waves-effect" routerLink="/singup">Sign up</a>
+            </li>
+          </ng-template>
+          <ng-template #showThis>
+            <a class="waves-effect" routerLink="/login">Signup</a>
+          </ng-template>
+          <li *ngIf="!service.currentUser$">
             <a class="waves-effect" routerLink="/register">Join us</a>
+          </li>
+          <li *ngIf="service.currentUser$ | async as user">
+            <a class="waves-effect" (click)="logout()">Logout</a>
           </li>
         </ul>
       </div>

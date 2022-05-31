@@ -1,4 +1,4 @@
-/*import { Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Inject } from '@angular/core';
 
 import {
@@ -18,5 +18,7 @@ export class CrudService {
   getAll(): AngularFireList<any> {
     return this.tutorialsRef;
   }
+  getOne(email: any): any {
+    return this.db.object('Clients');
+  }
 }
-*/
