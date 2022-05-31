@@ -8,7 +8,10 @@
 
 .container {
   margin-top: 70px;
+
   font-size: large;
+  margin-left: 70px;
+  padding-right: 300px;
 }
 
 .title {
