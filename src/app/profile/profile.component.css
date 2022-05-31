@@ -10,3 +10,20 @@ img {
   margin-top: 15px;
   padding-left: 40px;
 }
+.half {
+  width: 50%;
+  height: 150px;
+  background-color: white;
+}
+.secondHalf {
+  width: 50%;
+  height: 150px;
+  background-color: pink;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 60px;
+}

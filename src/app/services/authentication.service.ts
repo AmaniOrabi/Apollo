@@ -34,6 +34,8 @@ export class AuthenticationService {
       .valueChanges()
       .subscribe((users) => {
         const user = users.filter((user) => user.email === this.email);
+        console.log(JSON.stringify(user[0]));
+
         this.setUserData({
           email: user[0].email,
           ecg: user[0].ECG,
