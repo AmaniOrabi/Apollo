@@ -6,7 +6,7 @@
         <img src="../assets/images/apolloicon.png" alt="icon" />
         <a routerLink="/" class="brand-logo">Apollo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
+          <li *ngIf="service.currentUser$ | async as user">
             <a>Logged in as {{ email }}</a>
           </li>
           <li>

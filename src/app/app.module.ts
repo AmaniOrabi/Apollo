@@ -17,6 +17,8 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { ReactiveFormsModule } from '@angular/forms';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { ProfileComponent } from './profile/profile.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LineChartComponent } from './line-chart/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { ProfileComponent } from './profile/profile.component';
     LogoComponent,
     FooterComponent,
     ProfileComponent,
+    LineChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { ProfileComponent } from './profile/profile.component';
     AngularFireDatabaseModule,
     ReactiveFormsModule,
     provideDatabase(() => getDatabase()),
+    MDBBootstrapModule.forRoot(),
   ],
   providers: [AngularFireDatabaseModule],
   bootstrap: [AppComponent],
