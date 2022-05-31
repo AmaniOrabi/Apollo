@@ -1,11 +1,9 @@
-import { Injectable } from '@angular/core';
-// import {
-//   AngularFireDatabase,
-//   AngularFireList,
-// } from '@angular/fire/compat/database';
+/*import { Injectable } from '@angular/core';
+import { Inject } from '@angular/core';
+
 import {
-  AngularFireDatabase,
   AngularFireList,
+  AngularFireDatabase,
 } from '@angular/fire/compat/database';
 
 @Injectable({
@@ -21,3 +19,4 @@ export class CrudService {
     return this.tutorialsRef;
   }
 }
+*/

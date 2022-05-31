@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+/*import { Injectable } from '@angular/core';
 import {
   Auth,
   authState,
@@ -22,3 +22,4 @@ export class AuthenticationService {
     return this.currentUser$;
   };
 }
+*/

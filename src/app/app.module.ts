@@ -15,6 +15,9 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireModule } from '@angular/fire/compat';
+import { ReactiveFormsModule } from '@angular/forms';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { AngularFireModule } from '@angular/fire/compat';
     ShowPasswordComponent,
     LogoComponent,
     FooterComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +38,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     provideAuth(() => getAuth()),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     AngularFireDatabaseModule,
+    ReactiveFormsModule,
+    provideDatabase(() => getDatabase()),
   ],
   providers: [AngularFireDatabaseModule],
   bootstrap: [AppComponent],

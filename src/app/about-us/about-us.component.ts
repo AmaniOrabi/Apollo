@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../services/authentication.service';
+//import { AuthenticationService } from '../services/authentication.service';
 
 @Component({
   selector: 'app-about-us',
@@ -7,13 +7,13 @@ import { AuthenticationService } from '../services/authentication.service';
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements OnInit {
-  constructor(private service: AuthenticationService) {}
-
+  // constructor(private service: AuthenticationService) {}
+  constructor() {}
   ngOnInit(): void {
-    this.service
+    /* this.service
       .login('alaac617@gmail.com', 'doudoud2D')
       .subscribe((payload) => {
         console.log(payload);
-      });
+      });*/
   }
 }
